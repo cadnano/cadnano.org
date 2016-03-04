@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://cadnano.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>cadnano&#039;s blog</title>
+ <link>http://cadnano.org/blogs/cadnano</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>cadnano version 2.2.0</title>
+ <link>http://cadnano.org/blog/cadnano-version-220</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;The 2.2.0 release of cadnano introduces a new plugin framework to facilitate sharing of user-created extensions of the software. We&#039;ve included one example plugin to serve as a reference for developing additional plugins, and plan to document everything in a future release. Overall stability of the application is also improved.&lt;/p&gt;
+&lt;h4&gt;Download links&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.2.0.pkg.zip&quot;&gt;cadnano 2.2.0 installer (OSX)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.2.0-x86.msi&quot;&gt;cadnano 2.2.2 Installer (Windows 32 bit)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.2.0-x64.msi&quot;&gt;cadnano 2.2.0 Installer (Windows 64 bit)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Platform-specific installation instructions are linked from the &lt;a href=&quot;http://cadnano.org/license#download&quot;&gt;download&lt;/a&gt; page.
+&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;AutoBreak Plugin&lt;/h4&gt;
+&lt;p&gt;&lt;img width=&quot;200&quot; src=&quot;/sites/default/files/styles/large/public/pluginmenu_0.png&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;As a first example plugin, we have written an automatic staple-breaking plugin that introduces breakpoints into the staple strands according to user-specified parameters.&lt;/li&gt;
+&lt;li&gt;The plugin requires &lt;a href=&quot;http://networkx.lanl.gov/&quot;&gt;networkx&lt;/a&gt; to run. Note to developers: networkx is included in our binaries, but is not included in the git source. You&#039;ll need to navigate to the cadnano2/include folder and run &quot;python getdependencies.py&quot; to download the source.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Before AutoBreak:&lt;br /&gt;&lt;a href=&quot;/sites/default/files/styles/large/public/preautobreak.png&quot;&gt;&lt;img width=&quot;200&quot; src=&quot;/sites/default/files/styles/large/public/preautobreak.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After AutoBreak:&lt;br /&gt;&lt;a href=&quot;/sites/default/files/styles/large/public/postautobreak.png&quot;&gt;&lt;img width=&quot;200&quot; src=&quot;/sites/default/files/styles/large/public/postautobreak.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Developing custom plugins&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Please write to us with questions, as this feature is still in the early stages of development and we are happy to help anyone who wants to develop a plugin. We can even help you create a dialog if you&#039;re not familiar with Qt.&lt;/li&gt;
+&lt;li&gt;The best way to start writing a custom plugin is to clone the &lt;a href=&quot;https://github.com/sdouglas/cadnano2/&quot;&gt;cadnano2 git repository&lt;/a&gt; and get that running on your machine. Next, create a new sub-folder in the plugins directory that follows the same format as the AutoBreak plugin&lt;/li&gt;
+&lt;li&gt;The plugin adds itself to the menu in __init__.py, and connects its QAction signal to the desired slot. The slot (i.e. the actual plugin code that manipulates the model) can live in a separate file, (see autobreak.py)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://qt-project.org/doc/qt-4.8/designer-manual.html&quot;&gt;Qt Designer&lt;/a&gt; can be used to create a custom dialog that accepts input parameters for the plugin. PyQt&#039;s pyuic4 can then be used to compile the ui file into python (see our Makefile).&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;Bug fixes &amp;amp; Updates&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Fixed merging of strands that contained loops.&lt;/li&gt;
+&lt;li&gt;Fixed some subtle bugs with AutoStaple that would crop up later when editing strands downstream.&lt;/li&gt;
+&lt;li&gt;Patched Windows installer so it can now find Maya and cadnano files not on the C:\.&lt;/li&gt;
+&lt;li&gt;Fixed bug in which cadnano was using the wrong environment variable to find the home folder in Windows.&lt;/li&gt;
+&lt;li&gt;Visibility / z-stacking issues with pencil tool.&lt;/li&gt;
+&lt;li&gt;Applied sequences don&#039;t get cleared when breaking or merging strands.&lt;/li&gt;
+&lt;li&gt;Mousing over a strand now displays its length in the status bar.
+&lt;/li&gt;&lt;li&gt;Fixed display of insertion sequences in the path view.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 01 Mar 2012 23:48:43 +0000</pubDate>
+ <dc:creator>cadnano</dc:creator>
+ <guid isPermaLink="false">37 at http://cadnano.org</guid>
+</item>
+<item>
+ <title>Update: 2.1.1</title>
+ <link>http://cadnano.org/blog/update-211</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;We&#039;ve released a minor update to cadnano to fix a bug where unpaired staple sequences were not exporting as &#039;?&#039; characters.&lt;/p&gt;
+&lt;h4&gt;Download links&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.1.1.pkg.zip&quot;&gt;cadnano 2.1.1 installer (OSX)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.1.1-x86.msi&quot;&gt;cadnano 2.1.1 Installer (Windows 32 bit)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.1.1-x64.msi&quot;&gt;cadnano 2.1.1 Installer (Windows 64 bit)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Wed, 11 Jan 2012 19:58:05 +0000</pubDate>
+ <dc:creator>cadnano</dc:creator>
+ <guid isPermaLink="false">35 at http://cadnano.org</guid>
+</item>
+<item>
+ <title>cadnano version 2.1</title>
+ <link>http://cadnano.org/blog/cadnano-version-21</link>
+ <description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;After stabilizing the data model in the 2.0 release, we&#039;ve been busy with some major updates to the cadnano user interface in the last couple months. Read below for what&#039;s new.&lt;/p&gt;
+&lt;h4&gt;Download links&lt;/h4&gt;
+&lt;p&gt;Edit: update to 2.1.1&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.1.1.pkg.zip&quot;&gt;cadnano 2.1.1 installer (OSX)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.1.1-x86.msi&quot;&gt;cadnano 2.1.1 Installer (Windows 32 bit)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://dl.dropbox.com/u/5290041/cadnano2.1.1-x64.msi&quot;&gt;cadnano 2.1.1 Installer (Windows 64 bit)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Platform-specific installation instructions are linked from the &lt;a href=&quot;http://cadnano.org/license#download&quot;&gt;download&lt;/a&gt; page.
+&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;New selection-based workflow&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;The interface for editing strands has been significantly changed. Instead of dragging one endpoint at a time, Strand elements can now be selected and dragged simultaneously.&lt;/li&gt;
+&lt;li&gt;To extend strands: click and drag to create a rubber-band selection box around the target endpoints, and then click and drag those endpoints as a group.&lt;/li&gt;
+&lt;li&gt;To resize the entire interface of a structure, select and drag the crossovers. They will snap to &quot;legal&quot; positions.&lt;/li&gt;
+&lt;li&gt;More explanation and links to example YouTube videos can be found in the &lt;a href=&quot;/docs&quot;&gt;docs&lt;/a&gt; page.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a target=&quot;_new&quot; href=&quot;http://youtu.be/oiyW0dFNLFI&quot;&gt;&lt;img width=&quot;200&quot; src=&quot;/sites/default/files/styles/large/public/dragtoresize.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Selection filters&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;In order to allow precise selections, we also have added selection filters. You can control whether scaffold and/or staple are selected as well as the the feature type, endpoints, xovers, strands, or helices.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;/docs#filters&quot;&gt;&lt;img width=&quot;200&quot; src=&quot;/sites/default/files/styles/large/public/selectable.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Updated paint tool&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Click and drag to paint multiple strands simultaneously.
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img width=&quot;200&quot; src=&quot;/sites/default/files/styles/large/public/painttool.png&quot; /&gt;&lt;/p&gt;
+&lt;h4&gt;No more erase tool&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Selected objects are removed by pressing the delete key. If a crossover is selected, it will be removed but leave strands intact. If one or both endpoints of a strand is selected, the entire strand will be deleted.
+&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Status bar&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Mouse over a position to display the coordinate.
+&lt;/li&gt;&lt;li&gt;The &quot;delta&quot; is displayed when dragging selected items.
+&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Automatic scaffold creation&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Cadnano will attempt to &quot;pre-populate&quot; some scaffold strands when you click and drag in the lattice panel.
+&lt;/li&gt;&lt;li&gt;Rasterization style can be chosen in the Preferences.
+&lt;/li&gt;&lt;li&gt;Use undo to revert to the 3-base stubs.
+&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Appearance changes&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Path endpoints drawn with a border to make them easier to see when zoomed out.
+&lt;/li&gt;&lt;li&gt;Sequence labels have been moved &quot;inside&quot; the strand grid in the path view.
+&lt;/li&gt;&lt;li&gt;Vertical grid lines are drawn thicker near default staple crossovers (every 7 bases for honeycomb lattice and 8 bases for square lattice).
+&lt;/li&gt;&lt;li&gt;Zoom level of detail: grid lines are hidden when zoomed out to make features easier to distinguish.
+&lt;/li&gt;&lt;li&gt;Removed some extra file menus &amp;amp; items.
+&lt;/li&gt;&lt;li&gt;Added &quot;about cadnano&quot; dialog.
+&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Performance improvements&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Autostaple is faster. It had slowed down significantly compared to cadnano1 due to the new data model architecture. It&#039;s still not as fast as the original, but future optimizations should be possible.
+&lt;/li&gt;&lt;li&gt;Moving items is faster after disabling &lt;a href=&quot;http://developer.qt.nokia.com/doc/qt-4.8/qgraphicsscene.html#ItemIndexMethod-enum&quot;&gt;QGraphicsScene Item Indexing&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Bug fixes&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;Fixed a bug in osx installer causing re-installs to fail.
+&lt;/li&gt;&lt;li&gt;Fixed bug causing crash when creating new document in maya
+&lt;/li&gt;&lt;li&gt;Fixed bug causing some icons to not display.
+&lt;/li&gt;&lt;li&gt;Fixed bug causing paint tool to switch to black if color dialog was canceled.
+&lt;/li&gt;&lt;li&gt;Fixed bug causing parts to resize smaller improperly.
+&lt;/li&gt;&lt;li&gt;Fixed bug with strand merging.
+&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 03 Jan 2012 21:14:33 +0000</pubDate>
+ <dc:creator>cadnano</dc:creator>
+ <guid isPermaLink="false">31 at http://cadnano.org</guid>
+</item>
+</channel>
+</rss>

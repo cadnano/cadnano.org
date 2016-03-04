@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+<meta property="og:postal-code" content="02115" />
+<meta property="og:region" content="MA" />
+<meta property="og:email" content="shawn.douglas@wyss.harvard.edu" />
+<meta property="og:phone_number" content="7813663816" />
+<link rel="shortcut icon" href="../sites/all/themes/glory/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta property="og:site_name" content="cadnano" />
+<meta property="og:locality" content="Boston" />
+<meta property="og:url" content="http://cadnano.org/blog/update-211" />
+<link rel="canonical" href="update-211.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="../node/35.html" />
+<meta property="og:title" content="Update: 2.1.1" />
+<meta property="og:type" content="non_profit" />
+<meta property="og:description" content="We&#039;ve released a minor update to cadnano to fix a bug where unpaired staple sequences were not exporting as &#039;?&#039; characters.
+
+Download links
+
+cadnano 2.1.1 installer (OSX)
+cadnano 2.1.1 Installer " />
+<meta property="og:street-address" content="3 BLACKFAN STREET" />
+  <title>Update: 2.1.1 | cadnano</title>
+  <style type="text/css" media="all">@import url("http://cadnano.org/modules/system/system.base.css?m46fmu");
+@import url("http://cadnano.org/modules/system/system.menus.css?m46fmu");
+@import url("http://cadnano.org/modules/system/system.messages.css?m46fmu");
+@import url("http://cadnano.org/modules/system/system.theme.css?m46fmu");</style>
+<style type="text/css" media="all">@import url("http://cadnano.org/modules/field/theme/field.css?m46fmu");
+@import url("http://cadnano.org/modules/node/node.css?m46fmu");
+@import url("http://cadnano.org/modules/search/search.css?m46fmu");
+@import url("http://cadnano.org/modules/user/user.css?m46fmu");
+@import url("../sites/all/modules/views/css/views.css%3Fm46fmu.css");</style>
+<style type="text/css" media="all">@import url("../sites/all/modules/colorbox/styles/default/colorbox_default_style.css%3Fm46fmu.css");
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fm46fmu.css");</style>
+<style type="text/css" media="all">@import url("../sites/all/themes/glory/style.css%3Fm46fmu.css");</style>
+  <link rel="apple-touch-icon" sizes="57x57" href="../sites/all/themes/glory/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../sites/all/themes/glory/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../sites/all/themes/glory/images/apple-touch-icon-114x114.png">
+  
+   
+  <script type="text/javascript" src="http://cadnano.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://cadnano.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://cadnano.org/misc/drupal.js?m46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/admin_menu/admin_devel/admin_devel.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/libraries/colorbox/colorbox/jquery.colorbox-min.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/colorbox/js/colorbox.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/colorbox/styles/default/colorbox_default_style.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/google_analytics/googleanalytics.js%3Fm46fmu"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-5094923-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/all/modules/views/js/jquery.ui.dialog.patch.js%3Fm46fmu"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"glory","theme_token":"nymddax0qdeF0OLlNHBnCUIU5IouR_DcqmUIPHdPlzQ","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/views\/js\/jquery.ui.dialog.patch.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/glory\/style.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"100%","maxHeight":"100%","fixed":true,"__drupal_alter_by_ref":["default"]},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<a name="top"></a> 
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-35 node-type-blog" >
+    
+
+
+  <div id="skip-link">
+    <a href="update-211.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+          <a href="update-211.html#navigation" class="element-invisible element-focusable">Skip to navigation</a>
+      </div>
+
+<header class="clearfix dark" id="header" role="banner" >
+
+<a href="../index.html" title="Home" rel="home" id="logo">
+<img src="../sites/default/files/cadnano_logo.png" alt="Home" />
+</a>
+
+ 
+<nav id="navigation" role="navigation" class="clearfix">
+<h2 class="element-invisible">Main menu</h2><ul class="links main-menu clearfix"><li class="menu-214 first"><a href="../blog.html" title="">blog</a></li>
+<li class="menu-318"><a href="../docs.html" title="cadnano documentation">docs</a></li>
+<li class="menu-194"><a href="../gallery.html">gallery</a></li>
+<li class="menu-180"><a href="../license.html#download">source</a></li>
+<li class="menu-319 last"><a href="../about.html" title="About cadnano.">about</a></li>
+</ul></nav> <!-- /#navigation -->
+</header> <!-- /#header -->
+
+
+<div id="wrapper" class="clearfix">
+
+  
+
+  <section id="main" role="main" class="clearfix">
+        <a id="main-content"></a>
+            <h1 class="title">Update: 2.1.1</h1>                    <div class="region region-content">
+  <section id="block-system-main" class="block block-system">
+<div class="content">
+  <p class="submitted">Published by <span class="username">cadnano</span> on Wed, 01/11/2012 - 14:58</p>
+
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>We've released a minor update to cadnano to fix a bug where unpaired staple sequences were not exporting as '?' characters.</p>
+<h4>Download links</h4>
+<ul><li><a href="http://dl.dropbox.com/u/5290041/cadnano2.1.1.pkg.zip">cadnano 2.1.1 installer (OSX)</a></li>
+<li><a href="http://dl.dropbox.com/u/5290041/cadnano2.1.1-x86.msi">cadnano 2.1.1 Installer (Windows 32 bit)</a></li>
+<li><a href="http://dl.dropbox.com/u/5290041/cadnano2.1.1-x64.msi">cadnano 2.1.1 Installer (Windows 64 bit)</a></li>
+</ul></div></div></div></div>
+
+<footer>
+<ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/cadnano.html" title="Read cadnano&#039;s latest blog entries.">cadnano&#039;s blog</a></li>
+</ul>	  
+<div id="social-bm">
+<div id="social-bm-go"><g:plusone size="medium"></g:plusone></div>
+<div id="social-bm-tw"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+<div id="social-bm-fb"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" send="true" layout="button_count" show_faces="false"></fb:like></div>
+<!--<a id="social-bm-comment" href="#comment">comment</a>-->
+
+
+</div> 
+	  
+</footer>
+ <!-- /.node -->
+
+
+
+
+</div>
+</section> </div>
+ <!-- /.region -->
+  </section> <!-- /#main -->
+  
+  
+<aside id="sidebar-second" role="complimentary" class="sidebar clearfix">
+<div class="region region-sidebar-second">
+  <section id="block-block-1" class="block block-block">
+<div class="content">
+<div id="likebox-frame"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href=" https://www.facebook.com/cadnano.org" width="300" colorscheme="light" show_faces="true" stream="false" header="false"></fb:like-box></div></div>
+</section> </div>
+ <!-- /.region -->
+</aside>  <!-- /#sidebar-second -->
+
+
+
+<footer id="footer" role="contentinfo" class="clearfix">
+<div class="dots"></div>  
+<div class="mini-column-wrapper"> 
+<div class="left1"><div class="region region-four-col-first">
+  <section id="block-block-2" class="block block-block">
+<h2 class="block" ><span>
+learn</span></h2>
+<div class="content">
+<ul><li><a href="../whats-new-cadnano.html">What's new?</a></li>
+<li><a href="../license.html#download">How to install</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left2"><div class="region region-four-col-second">
+  <section id="block-block-5" class="block block-block">
+<h2 class="block" ><span>
+links</span></h2>
+<div class="content">
+<ul><li><a href="../legacy.html">legacy site</a></li>
+<li><a href="../rss.xml">rss feed</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left3"><div class="region region-four-col-third">
+  <section id="block-block-15" class="block block-block">
+<h2 class="block" ><span>
+join</span></h2>
+<div class="content">
+<ul><li><a href="http://biomod.net/">biomod</a></li>
+<li><a href="../volunteer.html">volunteer</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left4"><div class="region region-four-col-fourth">
+  <section id="block-block-3" class="block block-block">
+<h2 class="block" ><span>
+partner projects</span></h2>
+<div class="content">
+<ul><li><a href="http://cando.dna-origami.org/">cando</a></li>
+<li><a href="http://www.molecularmovies.com/toolkit/">mMaya</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left5"><div class="region region-four-col-fifth">
+  <section id="block-block-14" class="block block-block">
+<h2 class="block" ><span>
+contributors</span></h2>
+<div class="content">
+<ul><li><a href="http://wyss.harvard.edu/">Wyss Institute</a></li>
+<li><a href="http://www.autodeskresearch.com/groups/nano">Autodesk Research</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div></div>
+  </div> <!-- /#wrapper -->
+
+<div id="footer-block">
+<div class="region region-footer">
+  <section id="block-block-6" class="block block-block">
+<div class="content">
+© Copyright 2016 cadnano.org. All content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a> license</div>
+</section> </div>
+ <!-- /.region -->
+</div>
+	
+</footer> <!-- /#footer -->
+
+<!-- gplus code -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+  </body>
+
+</html>

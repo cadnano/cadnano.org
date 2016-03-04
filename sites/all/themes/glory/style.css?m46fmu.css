@@ -1,0 +1,415 @@
+/**
+ * 0.RESET 
+ */ 
+@import "reset.css";
+@import "default.css";
+/**
+ colors: 
+ chocolate:  #444
+ orange:     #ff9933
+
+ 
+
+ **/ 
+
+
+
+::-moz-selection{background: #f33;color: white;text-shadow: none;}
+::selection{background: #f33;color:#fff;text-shadow: none;}
+
+
+
+
+
+/* typography */
+
+
+/* link colors */
+a:link{	webkit-tap-highlight-color: #f33;} /* nice html5 select text color */
+#header a:link,#header a:visited {color:#777;}
+#header a:hover {color:#333;text-decoration:none;}
+#header a:active{color:#000;}
+a:link, a:visited{text-decoration:none;color:#000;} 
+a:hover {text-decoration:underline;}
+#footer a:link,#footer a:visited{color: #999999;font-size:11px;padding-bottom:2px;}
+#footer a:hover {color:#000;}
+
+/* top navigation menu */
+#navigation {margin:40px 0 0 0;float:right;text-align:right;font-family: Arial;font-size:1.1em;}
+#navigation  ul.main-menu{padding:0;margin:0;text-align:right;}
+#navigation ul.main-menu li {display:block;background:transparent;float:left;padding:4px 12px;}
+#navigation ul.main-menu li.active {background-color:#555; border-radius:16px;}
+#navigation ul.main-menu li a:link,
+	#navigation ul.main-menu li a:visited {color:#a0a0a0;display:block;font-size:.9em;}
+#navigation ul.main-menu li a:hover {color:#fe963c}
+#navigation ul.main-menu li a.active {color:#ccc;text-decoration:none;}
+#navigation ul.main-menu .first {margin-left:-19px;}
+#navigation ul.main-menu .last {padding-right:15px;}
+#navigation ul.main-menu li a span {color:#999;font-family:Arial;font-size:13px;font-style:italic;text-transform:lowercase;}
+
+
+/* #navigation li.last {background:none;float:right;} 
+#navigation li.last a {background:none;color:#323232;margin-top:5px;padding:0 10px;}
+#navigation li.last a span {color:#323232;font-family:Arial;font-style:normal;font-size:11px;font-weight:400;padding-bottom:2px;text-transform:capitalize;}*/
+
+
+/* color classes */
+.blue {color:#00afea;font-style:normal;}
+.green {color:#6dc158;}
+.orange {color:#fe963c;}
+.black{color:#000;}
+.pink{color:#f60087;}
+
+body{ font-family: helvetica,arial,sans-serif;color:#666;line-height: 155%;font-size: 13px;font-weight: normal;/*line-height:1;*/}
+ #sidebar-first, #sidebar-second { font-size:11px;}
+
+blockquote,q {
+quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+content:none;
+}
+blockquote { 
+	font-weight: 300;
+	line-height: 18px;
+	padding:15px 15px 5px;
+	background-color: #eee;
+	border-left: 5px solid #ddd;
+	border: 1px solid #ddd;
+}
+blockquote p {
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 8px;
+}
+blockquote #cited {
+  font-size: 12px;
+  color: #bfbfbf;
+  border-top: 1px solid #ddd;
+}
+
+pre,code,kbd,samp,tt {
+	font-family:'Bitstream Vera Sans Mono','Courier New',Courier,monospace;
+}
+code, pre {
+	font-size: 12px;
+	background-color: #f0f0f0;
+	color: #444;
+	display:block;
+	padding: 9px;
+	border: 1px #eee;
+}
+
+:focus {
+outline:0;
+}
+
+del {
+text-decoration:line-through;
+}
+
+
+
+caption,th,td {text-align:left; vertical-align: top;}
+
+table {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    margin-top: 15px;
+	font-size:12px;
+	border-spacing:0;
+}
+th {
+    background: none repeat scroll 0 0 #ececec;
+    color: #555;
+    font-weight: normal;
+	padding:8px 7px 7px 7px;border: 1px solid #E3E3E3;}
+}
+/*
+th tr a:link,th tr a:visited,th tr a:active, th a:focus{color:#fff}
+thead a:link,thead a:visited,thead a:active, thead a {color:#fff}*/
+th {border-color: #404046 #404046 -moz-use-text-color; border-style: solid solid none; border-width: 1px 1px medium;}
+td {    border: 1px solid #E3E3E3; padding:6px 6px 4px 6px;}
+tr { }
+tr.even {background-color: rgb(249, 249, 249);}
+tr.odd{background-color:#fff}
+
+
+
+
+sup {
+vertical-align:text-top;
+}
+
+sub {
+vertical-align:text-bottom;
+}
+
+body#tinymce {
+background-color:#FFF;
+}
+
+p {
+margin:0 0 15px 0;
+padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+color: #000;
+line-height: 135%;
+font-weight: bold;
+margin: 15px 0 5px 0;
+padding: 0;
+}
+h1 {
+color: #d0d0d0;
+font-weight:400;
+font-size:36px;
+line-height: 115%;
+margin-top: 5px;
+/*text-shadow:1px 0 1px #d0d0d0*/
+}
+
+h2 {font-size: 21px;font-weight: normal;}
+/*special - block h2s */
+h2.block {  background:url(images/bg.png) repeat #eee;height: 10px;line-height: 10px;text-transform: uppercase; letter-spacing: 1px; margin:5px 0 6px 0;font-size: 10px; }
+h2.block span{padding:0 8px 1px 0;background:#fff;color:#999;}
+/* special - FOOTER block h2s */
+#footer h2.block {  background:#fff;height: 10px;text-transform: none;line-height: 10px;margin:5px 0 6px 0;font-size: 11px;letter-spacing:0px; }
+#footer h2 span{padding:0 8px 1px 0;background:#fff;color:#000;font-weight: bold; }
+
+h3 {font-size: 16px; 
+border-bottom: 2px dotted #e8e8e8;
+letter-spacing:1px;
+margin-top:20px;}
+h4 {font-size:14px;}
+h5 {font-size:12px;}
+/* use this for large emphasis */
+.big{font-size: 23px;}
+
+
+fieldset {
+border:1px solid #bbb;
+margin:12px 0;
+padding:6px;
+}
+
+/* lists */
+
+ol, ul {    list-style: none outside none;}
+ul,ol{margin:0 0 10px;padding:0 0 0 20px;list-style:decimal;}
+ul{padding:0 0 0 18px;list-style:square;}
+li{margin-top:5px;}
+
+
+/* front page */
+#announcement{margin-top:-10px;height:500px;width:400px;}
+#announcement {float:right;width:400px;overflow:hidden;}
+#announcement h2 {font-size: 17px;line-height:1.25; margin-top:.4em; margin-bottom:.7em}
+#announcement h3 {border-width: 0}
+#announcement ul { background-color: #f8f8f5; border:1px solid #eee; 
+	list-style: disc inside none; margin-top:-5px; padding: 8px 0 8px 2px; }
+#announcement li { margin-top:3px; padding-left: 8px; border-bottom:1px dashed #e3e3e0 }
+#announcement li:last-child { border-bottom: 1px none #fff }
+
+
+/* specific typographical elements */
+
+/* blog-roll */
+section .blog-roll-item {margin-bottom:30px;} /*  sections on the /blog page */
+.blog-title{color:#000;font-size:16px;margin-bottom:3px;}
+.blog-date {color:#ccc;margin-top:0px;}
+.blog-teaser {margin:0px;}
+.blog-link a:link{font-weight:bold;margin:10px 0 30px 0;background:transparent url(images/arrowssprite.png) no-repeat scroll right -62px;padding-right:15px;}
+.submitted{color:#bdbdbd;}
+
+/* bottom of the blog */
+#social-bm{height:25px; padding:7px 10px 5px 5px; margin-top:0;background:#fafafa;border-top:2px solid black;}
+#social-bm-go{float:left;padding:0 5px 0 5px;}
+#social-bm-fb{float:left;padding:0 5px 0 0;}
+/* #social-bm-st{float:right;padding:0 5px 0 0;margin-top:1px;}*/
+#social-bm-tw{float:left;padding:0 5px 0 0;}
+#social-bm-comment{display:block;text-indent:-9999px;float:right;padding:0 5px 0 0;margin-top:-2px;background:url(images/comment-icon.png) no-repeat;height:23px;width:23px;}
+
+.blog_usernames_blog a{display:none;}/* removes cadnano's blog link at bottom of the blogs */
+
+
+
+
+caption {text-align:center;margin:6px 0;}
+.form-item {margin:12px 0;}
+
+
+
+/* end typography */
+
+
+
+body{ background:#bababa url(images/bg.png) repeat;margin:0;padding:0;}
+
+/* layout stuff, overriding default.css */
+/* when there is sidebar right */
+body.sidebar-second #main {  float: left;  margin: 0 20px 0 0;  padding: 0;  width: 620px; }
+body.sidebar-second #sidebar-second {  float: right;  margin: 0;  padding: 0; width: 300px;} 
+/* when there's two sidebars */
+body.two-sidebars #sidebar-first {   margin: 0 10px 0 -625px;padding-right:5px;width:185px; border-right:1px dotted #ccc; }
+body.two-sidebars #sidebar-second {  float: left;  margin: 0 0 0 10px;  padding: 0;  width: 300px;border-bottom:1px dotted #ccc;}
+body.two-sidebars #main {  float: left;  margin: 0 0 0 200px;  width: 425px;border-right:1px dotted #ccc;}/* shrinks main column for added robustness when resizing font size with mousewheel */
+/* UNFINISHED two sidebars, left and main */
+/* */
+
+#main{padding: 0 auto;}
+#sidebar-first .block,#sidebar-second  .block{ } /* unfinished */
+.block-region {padding:0;}
+
+#wrapper {background:#fff;border-right:1px solid #e3e3e3;border-left:1px solid #e3e3e3;border-top:1px solid #e3e3e3;/*box-shadow: 0pt 0pt 15px rgba(122, 122, 122, 0.1)*/;/* padding:10px 20px 0px 20px; */padding-top:10px;}
+.not-logged-in #wrapper { /* margin-top:50px;*/ }
+
+
+#header{width:960px;height: 80px;margin:0px auto 0px auto;padding:0;background:#444;border:1px solid #444;}
+/** alternative styles to use for topbar nav and sitename **/
+	a#logo {float:left;text-align:left;font-family: Arial;font-size:1.1em;padding:12px 0 0 10px;}
+	
+.admin-menu #header { position:static }
+
+
+/* regions */
+#mission{}
+	#block-block-10{margin-top:0;}
+#footer {padding:15px 0 0 0;color:#888;font-size:11px;}
+	#footer-block{width:920px;height:20px;background:#fafafa;margin:0 auto;padding:15px 20px 10px 20px;border:1px solid #e3e3e3;}
+	#footer-block p{font-size:11px;}
+	#footer ul{list-style:none;padding:0;margin:2px 0 0 0;}
+	#footer .feed-icon{display:none;} /* removes the automatic drupal rss feed icon in the footer */
+
+
+.block {}
+
+/* four columns at bottom of the page */
+/* because minicolumn should be reusable outside the footer, i'm making it a class */
+.mini-column-wrapper{min-height:200px;padding:5px; margin: 0px auto;   width: 940px; font-size: 1em; line-height:14px;}
+.mini-column-wrapper p { line-height:18px; font-size:1em;}
+.left1,.left2,.left3,.left4,.left5{float:left;width:140px;margin-right: 15px;}
+.left6{float: right;   width: 150px;text-align:right}
+.mini-column-wrapper .footer{  float: left;   width: 100%;  min-height:20px;}
+
+
+.dots {border-top:1px dotted #ccc;}
+a.back-to-top, a.back-to-top:hover {background:transparent url(images/arrowssprite.png) no-repeat right 0;padding-right:10px;}
+a.back-to-top:hover {color:#000;}
+
+
+
+
+
+/* this hack removes the border around the Facebook likebox, and narrows it somewhat */
+#likebox-frame{ border:2px solid #fff; width:289px; z-index:10; height: 156px; overflow: hidden; position:relative; top:-1px; left:-2px;}
+#likebox-frame iframe{  left:-5px;  overflow:hidden;  position:relative;  top:-1px;}
+
+
+
+
+
+
+
+
+/* content-glider - SLIDESHOW */
+.glidecontentwrapper header{display:none;}
+.glidecontentwrapper{position: relative; /* Do not change this value */width: 520px;
+/* Set height to be able to contain height of largest content shown */
+/*border: 5px solid #336299; /* #687C98; */
+overflow: hidden;}
+/*
+	Total wrapper width: 350px+5px+5px=360px
+	Or width of wrapper div itself plus any left and right CSS border and padding
+	Adjust related containers below according to comments
+*/
+.glidecontent{ /*style for each glide content DIV within wrapper.*/
+position: absolute; /* Do not change this value */background: white;/*padding: 10px;*/visibility: hidden; width:100%;}
+.glidecontent a:hover {  text-decoration: none;}
+.glidecontent a {  text-decoration: none;} 
+/*
+ Total glidecontent width: 330px+10px+10px=350px
+	Or width of wrapper div itself (not counting wrapper border/padding)
+*/
+.glidecontenttoggler{ /*style for DIV used to contain toggler links. */
+	width:70px;
+	margin:0;
+	z-index:9995;
+	margin-top: 458px;
+	margin-left:425px;
+	text-align: left;
+}
+/*
+ Total contenttoggler width: 350px+5px+5px=360px
+	Or total width of wrapper div (counting wrapper border/padding)
+*/
+.glidecontenttoggler a{ /*style for every navigational link within toggler */
+display: -moz-inline-box;
+display: inline-block;
+/*border: 1px solid black;*/
+color: #2e6ab1;
+/*padding: 1px 3px;
+margin-right: 3px;*/
+text-decoration: none;
+/*background: white;*/
+}
+.glidecontenttoggler a:hover {opacity:1;}
+.glidecontenttoggler a:active {text-indent:-9999px;}
+.glidecontenttoggler a.selected{ /*style for selected page's toggler link. ".selected" class auto generated! */}
+.glidecontenttoggler a.toc{ /*style for individual toggler links (page 1, page 2, etc). ".toc" class auto generated! */
+display:none; /* turns off the numbers. Using only 'previous' and 'next' */
+}
+.glidecontenttoggler a.prev, .glidecontenttoggler a.next{ background:#000;color:#ccc;height:30px;width:30px;}
+.glidecontenttoggler a.prev {text-indent:-9999px;background:url(images/prev.png) no-repeat;opacity:0.4;border:1px solid #ccc;}
+.glidecontenttoggler a.next{text-indent:-9999px;background:url(images/next.png) no-repeat;opacity:0.4;border:1px solid #ccc;text-align:left !important;}
+
+/* description of each slide node */
+.node-slide .field-name-body {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:500px;
+	border-radius:4px;
+	padding:10px 5px 10px 8px;
+	margin:0 0 5px;
+	color:#fff;
+	background-color:#444;
+	opacity:0.9;
+}
+.node-slide .field-name-body p { margin:0; padding-right:90px; }
+
+/* particular views */
+/* screenshot thumbs on front page */
+.screenshot-thumb{border:1px solid #ccc;width:170px;height:170px;float:left;margin:0 6px;}
+#block-views-screenshot-thumbs-block { margin-left:10px;}
+
+
+.link-group { float:left; width:300px }
+
+/* admin menu hacks */
+
+dd {margin-left:0;}
+
+/* cool buttons */
+#autodesk-logo{background:url(images/autodesk-logo.jpg) no-repeat;height:83px;width:300px;}
+
+.button {display: inline-block;	outline: none;	cursor: pointer;	text-align: center;	text-decoration: none;	font: 14px/100% Arial, Helvetica, sans-serif;	padding: .5em 2em .55em;text-shadow: 0 1px 1px rgba(0,0,0,.3);	-webkit-border-radius: .5em; 	-moz-border-radius: .5em;	border-radius: .5em;	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);	box-shadow: 0 1px 2px rgba(0,0,0,.2);}
+.button:hover {	text-decoration: none;}
+.button:active {position: relative;top: 1px;}
+/* button classes */
+a.orange{color:#fff;}
+.orange {color: #fef4e9;border: solid 1px #da7c0c;background: #f78d1d;background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));background: -moz-linear-gradient(top,  #faa51a,  #f47a20);	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');}
+.orange:hover{	background:#f47c20;background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));	background: -moz-linear-gradient(top,  #f88e11,  #f06015);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');}
+.orange:active {color: #fcd3a5;	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');}
+a.blue{color:#fff;}
+.blue {	color: #d9eef7;	border: solid 1px #0076a3;	background: #0095cd;	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0878a5));background: -moz-linear-gradient(top,  #00adee,  #0878a5);	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0878a5');}
+.blue:hover {background: #007ead;	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));	background: -moz-linear-gradient(top,  #0095cc,  #00678e);	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');}
+.blue:active {	color: #fcd3a5;	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');}
+a.white{color:#777;}
+.white {	color: #777;-webkit-box-shadow: none;text-shadow:none;	-moz-box-shadow: none;	box-shadow: none;	border: solid 1px #eee;	background: #c6c6c6;	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#e9e9e9));	background: -moz-linear-gradient(top,  #f8f8f8,  #e9e9e9);	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#e9e9e9');}
+.white:hover {	background: #c6c6c6;	background: -webkit-gradient(linear, left top, left bottom, from(#d8d8d8), to(#c6c6c6));	background: -moz-linear-gradient(top,  #d8d8d8,  #c6c6c6);	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8d8d8', endColorstr='#c6c6c6');}
+.white:active {	color: #fcd3a5;	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');}
+
+a.download-button{height:68px;width:295px;background:url(images/download-button.jpg) no-repeat;text-indent:-9999px;display: inline-block;	float:right; outline: none;	cursor: pointer;margin:20px 0;}
+a.download-button:hover { opacity: 0.9; filter: alpha(opacity=80); /*background-position:0 -1px;*/}

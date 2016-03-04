@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+<meta property="og:region" content="MA" />
+<meta property="og:locality" content="Boston" />
+<meta property="og:postal-code" content="02115" />
+<meta property="og:email" content="shawn.douglas@wyss.harvard.edu" />
+<link rel="shortcut icon" href="../sites/all/themes/glory/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta property="og:site_name" content="cadnano" />
+<meta property="og:phone_number" content="7813663816" />
+<meta property="og:street-address" content="3 BLACKFAN STREET" />
+<meta property="og:url" content="http://cadnano.org/blog/cadnano-version-21" />
+<link rel="canonical" href="../blog/cadnano-version-21.html" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="31.html" />
+<meta property="og:title" content="cadnano version 2.1" />
+<meta property="og:image" content="http://cadnano.org/sites/default/files/styles/large/public/dragtoresize.png" />
+<meta property="og:description" content="After stabilizing the data model in the 2.0 release, we&#039;ve been busy with some major updates to the cadnano user interface in the last couple months. Read below for what&#039;s new.
+
+
+Download links
+Ed" />
+<meta property="og:type" content="non_profit" />
+  <title>cadnano version 2.1 | cadnano</title>
+  <style type="text/css" media="all">@import url("http://cadnano.org/modules/system/system.base.css?m46fmu");
+@import url("http://cadnano.org/modules/system/system.menus.css?m46fmu");
+@import url("http://cadnano.org/modules/system/system.messages.css?m46fmu");
+@import url("http://cadnano.org/modules/system/system.theme.css?m46fmu");</style>
+<style type="text/css" media="all">@import url("http://cadnano.org/modules/field/theme/field.css?m46fmu");
+@import url("http://cadnano.org/modules/node/node.css?m46fmu");
+@import url("http://cadnano.org/modules/search/search.css?m46fmu");
+@import url("http://cadnano.org/modules/user/user.css?m46fmu");
+@import url("../sites/all/modules/views/css/views.css%3Fm46fmu.css");</style>
+<style type="text/css" media="all">@import url("../sites/all/modules/colorbox/styles/default/colorbox_default_style.css%3Fm46fmu.css");
+@import url("../sites/all/modules/ctools/css/ctools.css%3Fm46fmu.css");</style>
+<style type="text/css" media="all">@import url("../sites/all/themes/glory/style.css%3Fm46fmu.css");</style>
+  <link rel="apple-touch-icon" sizes="57x57" href="../sites/all/themes/glory/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../sites/all/themes/glory/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../sites/all/themes/glory/images/apple-touch-icon-114x114.png">
+  
+   
+  <script type="text/javascript" src="http://cadnano.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://cadnano.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://cadnano.org/misc/drupal.js?m46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/admin_menu/admin_devel/admin_devel.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/libraries/colorbox/colorbox/jquery.colorbox-min.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/colorbox/js/colorbox.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/colorbox/styles/default/colorbox_default_style.js%3Fm46fmu"></script>
+<script type="text/javascript" src="../sites/all/modules/google_analytics/googleanalytics.js%3Fm46fmu"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-5094923-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/all/modules/views/js/jquery.ui.dialog.patch.js%3Fm46fmu"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"glory","theme_token":"T1ZPmWKqbRulf5hOBvA-lO61PIlRrZzHAh34Nr2l6W0","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/views\/js\/jquery.ui.dialog.patch.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/glory\/style.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"100%","maxHeight":"100%","fixed":true,"__drupal_alter_by_ref":["default"]},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<a name="top"></a> 
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-31 node-type-blog" >
+    
+
+
+  <div id="skip-link">
+    <a href="31.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+          <a href="31.html#navigation" class="element-invisible element-focusable">Skip to navigation</a>
+      </div>
+
+<header class="clearfix dark" id="header" role="banner" >
+
+<a href="../index.html" title="Home" rel="home" id="logo">
+<img src="../sites/default/files/cadnano_logo.png" alt="Home" />
+</a>
+
+ 
+<nav id="navigation" role="navigation" class="clearfix">
+<h2 class="element-invisible">Main menu</h2><ul class="links main-menu clearfix"><li class="menu-214 first"><a href="../blog.html" title="">blog</a></li>
+<li class="menu-318"><a href="../docs.html" title="cadnano documentation">docs</a></li>
+<li class="menu-194"><a href="../gallery.html">gallery</a></li>
+<li class="menu-180"><a href="../license.html#download">source</a></li>
+<li class="menu-319 last"><a href="../about.html" title="About cadnano.">about</a></li>
+</ul></nav> <!-- /#navigation -->
+</header> <!-- /#header -->
+
+
+<div id="wrapper" class="clearfix">
+
+  
+
+  <section id="main" role="main" class="clearfix">
+        <a id="main-content"></a>
+            <h1 class="title">cadnano version 2.1</h1>                    <div class="region region-content">
+  <section id="block-system-main" class="block block-system">
+<div class="content">
+  <p class="submitted">Published by <span class="username">cadnano</span> on Tue, 01/03/2012 - 16:14</p>
+
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>After stabilizing the data model in the 2.0 release, we've been busy with some major updates to the cadnano user interface in the last couple months. Read below for what's new.</p>
+<h4>Download links</h4>
+<p>Edit: update to 2.1.1</p>
+<ul><li><a href="http://dl.dropbox.com/u/5290041/cadnano2.1.1.pkg.zip">cadnano 2.1.1 installer (OSX)</a></li>
+<li><a href="http://dl.dropbox.com/u/5290041/cadnano2.1.1-x86.msi">cadnano 2.1.1 Installer (Windows 32 bit)</a></li>
+<li><a href="http://dl.dropbox.com/u/5290041/cadnano2.1.1-x64.msi">cadnano 2.1.1 Installer (Windows 64 bit)</a></li>
+<li>Platform-specific installation instructions are linked from the <a href="../license.html#download">download</a> page.
+</li></ul><h4>New selection-based workflow</h4>
+<ul><li>The interface for editing strands has been significantly changed. Instead of dragging one endpoint at a time, Strand elements can now be selected and dragged simultaneously.</li>
+<li>To extend strands: click and drag to create a rubber-band selection box around the target endpoints, and then click and drag those endpoints as a group.</li>
+<li>To resize the entire interface of a structure, select and drag the crossovers. They will snap to "legal" positions.</li>
+<li>More explanation and links to example YouTube videos can be found in the <a href="../docs.html">docs</a> page.</li>
+</ul><p><a target="_new" href="http://youtu.be/oiyW0dFNLFI"><img width="200" src="../sites/default/files/styles/large/public/dragtoresize.png" /></a></p>
+<h4>Selection filters</h4>
+<ul><li>In order to allow precise selections, we also have added selection filters. You can control whether scaffold and/or staple are selected as well as the the feature type, endpoints, xovers, strands, or helices.
+</li></ul><p><a href="../docs.html#filters"><img width="200" src="../sites/default/files/styles/large/public/selectable.png" /></a></p>
+<h4>Updated paint tool</h4>
+<ul><li>Click and drag to paint multiple strands simultaneously.
+</li></ul><p><img width="200" src="../sites/default/files/styles/large/public/painttool.png" /></p>
+<h4>No more erase tool</h4>
+<ul><li>Selected objects are removed by pressing the delete key. If a crossover is selected, it will be removed but leave strands intact. If one or both endpoints of a strand is selected, the entire strand will be deleted.
+</li></ul><h4>Status bar</h4>
+<ul><li>Mouse over a position to display the coordinate.
+</li><li>The "delta" is displayed when dragging selected items.
+</li></ul><h4>Automatic scaffold creation</h4>
+<ul><li>Cadnano will attempt to "pre-populate" some scaffold strands when you click and drag in the lattice panel.
+</li><li>Rasterization style can be chosen in the Preferences.
+</li><li>Use undo to revert to the 3-base stubs.
+</li></ul><h4>Appearance changes</h4>
+<ul><li>Path endpoints drawn with a border to make them easier to see when zoomed out.
+</li><li>Sequence labels have been moved "inside" the strand grid in the path view.
+</li><li>Vertical grid lines are drawn thicker near default staple crossovers (every 7 bases for honeycomb lattice and 8 bases for square lattice).
+</li><li>Zoom level of detail: grid lines are hidden when zoomed out to make features easier to distinguish.
+</li><li>Removed some extra file menus &amp; items.
+</li><li>Added "about cadnano" dialog.
+</li></ul><h4>Performance improvements</h4>
+<ul><li>Autostaple is faster. It had slowed down significantly compared to cadnano1 due to the new data model architecture. It's still not as fast as the original, but future optimizations should be possible.
+</li><li>Moving items is faster after disabling <a href="http://developer.qt.nokia.com/doc/qt-4.8/qgraphicsscene.html#ItemIndexMethod-enum">QGraphicsScene Item Indexing</a>
+</li></ul><h4>Bug fixes</h4>
+<ul><li>Fixed a bug in osx installer causing re-installs to fail.
+</li><li>Fixed bug causing crash when creating new document in maya
+</li><li>Fixed bug causing some icons to not display.
+</li><li>Fixed bug causing paint tool to switch to black if color dialog was canceled.
+</li><li>Fixed bug causing parts to resize smaller improperly.
+</li><li>Fixed bug with strand merging.
+</li></ul></div></div></div></div>
+
+<footer>
+<ul class="links inline"><li class="blog_usernames_blog first last"><a href="../blogs/cadnano.html" title="Read cadnano&#039;s latest blog entries.">cadnano&#039;s blog</a></li>
+</ul>	  
+<div id="social-bm">
+<div id="social-bm-go"><g:plusone size="medium"></g:plusone></div>
+<div id="social-bm-tw"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+<div id="social-bm-fb"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="" send="true" layout="button_count" show_faces="false"></fb:like></div>
+<!--<a id="social-bm-comment" href="#comment">comment</a>-->
+
+
+</div> 
+	  
+</footer>
+ <!-- /.node -->
+
+
+
+
+</div>
+</section> </div>
+ <!-- /.region -->
+  </section> <!-- /#main -->
+  
+  
+<aside id="sidebar-second" role="complimentary" class="sidebar clearfix">
+<div class="region region-sidebar-second">
+  <section id="block-block-1" class="block block-block">
+<div class="content">
+<div id="likebox-frame"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href=" https://www.facebook.com/cadnano.org" width="300" colorscheme="light" show_faces="true" stream="false" header="false"></fb:like-box></div></div>
+</section> </div>
+ <!-- /.region -->
+</aside>  <!-- /#sidebar-second -->
+
+
+
+<footer id="footer" role="contentinfo" class="clearfix">
+<div class="dots"></div>  
+<div class="mini-column-wrapper"> 
+<div class="left1"><div class="region region-four-col-first">
+  <section id="block-block-2" class="block block-block">
+<h2 class="block" ><span>
+learn</span></h2>
+<div class="content">
+<ul><li><a href="../whats-new-cadnano.html">What's new?</a></li>
+<li><a href="../license.html#download">How to install</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left2"><div class="region region-four-col-second">
+  <section id="block-block-5" class="block block-block">
+<h2 class="block" ><span>
+links</span></h2>
+<div class="content">
+<ul><li><a href="../legacy.html">legacy site</a></li>
+<li><a href="../rss.xml">rss feed</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left3"><div class="region region-four-col-third">
+  <section id="block-block-15" class="block block-block">
+<h2 class="block" ><span>
+join</span></h2>
+<div class="content">
+<ul><li><a href="http://biomod.net/">biomod</a></li>
+<li><a href="../volunteer.html">volunteer</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left4"><div class="region region-four-col-fourth">
+  <section id="block-block-3" class="block block-block">
+<h2 class="block" ><span>
+partner projects</span></h2>
+<div class="content">
+<ul><li><a href="http://cando.dna-origami.org/">cando</a></li>
+<li><a href="http://www.molecularmovies.com/toolkit/">mMaya</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div><div class="left5"><div class="region region-four-col-fifth">
+  <section id="block-block-14" class="block block-block">
+<h2 class="block" ><span>
+contributors</span></h2>
+<div class="content">
+<ul><li><a href="http://wyss.harvard.edu/">Wyss Institute</a></li>
+<li><a href="http://www.autodeskresearch.com/groups/nano">Autodesk Research</a></li>
+</ul></div>
+</section> </div>
+ <!-- /.region -->
+</div></div>
+  </div> <!-- /#wrapper -->
+
+<div id="footer-block">
+<div class="region region-footer">
+  <section id="block-block-6" class="block block-block">
+<div class="content">
+© Copyright 2016 cadnano.org. All content available under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a> license</div>
+</section> </div>
+ <!-- /.region -->
+</div>
+	
+</footer> <!-- /#footer -->
+
+<!-- gplus code -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+  </body>
+
+</html>
