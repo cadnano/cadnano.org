@@ -97,21 +97,24 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <section id="block-system-main" class="block block-system">
 <div class="content">
 
-
 <div class="content">
 <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even">
-<h1>Windows Installation (2018+)</h1>
+<h1>Windows Installation</h1>
+<br><br>
 <p><a href="http://douglaslab.org/tutorials/">Download</a> our step-by-step tutorial to install Cadnano1 and Cadnano2.</p>
+<p>(These instructions are current as of September 2018.)</p>
 <br><br><br><br><br>
 <h3>Windows Installation (pre-2018)</h3>
 <p>Note: Maya 2015 may no longer be available, and unfortunately, we do not have the resources to keep up with the annual release cycle. These instructions are provided for legacy purposes but are not supported and may no longer work.</p>
-<h2>Note to users with a partitioned drive</h2>
-<li>As of 12 March 2012, there are known issues with the installer in cases other than having everything on the C:\. Update Oct-2015: We've still seen this problem for years, so it doesn't seem likely to be fixed soon.<br /><h2>Optional: Install Autodesk Maya 2015</h2>
+<h4>Note to users with a partitioned drive</h4>
+<li>As of 12 March 2012, there are known issues with the installer in cases other than having everything on the C:\. Update Oct-2015: We've still seen this problem for years, so it doesn't seem likely to be fixed soon.<br />
+<h4>Optional: Install Autodesk Maya 2015</h4>
 <p>Cadnano does not need Maya to run. However, it is currently required if you would would like to see a 3D model of your structure, which many people find helful. In recent years, Autodesk Maya has made 3-year licenses available to individuals with a .edu email address.</p>
 <ol><li>Create an academic account at <a href="http://cadnano.org/www.autodesk.com/education/">www.autodesk.com/education/</a>. After you activate your account by clicking on the link in the email, fill in your preferences.</li>
 <li>Download the free version of Maya 2015 for your operating system <a href="http://students.autodesk.com/?nd=download_center">from here</a>.</li>
 <li>Install Maya 2015.</li>
-</ol><h2>Ensure Python is installed</h2>
+</ol>
+<h4>Ensure Python is installed</h4>
 <p>Open a command line window and type</p>
 <p><code>python</code></p>
 <p>If the python console is launched, you have python installed and can move on to installing Cadnano. Otherwise you need to install Python. We recommend version 2.7.2 as of this writing, but you may have success with newer versions. Note that this will probably NOT work with python3.</p>
@@ -129,13 +132,14 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 </li>
 <li>Click OK to close the Environment Variables and System Preferences dialog boxes.
 </li>
-</ol></li></ol><h2>Install cadnano</h2>
+</ol></li></ol>
+<h4>Install cadnano</h4>
 <ol><a href="http://bit.ly/1JoX9XD">cadnano 2.2.0 Installer (64 bit)</a>.</ol></li>
 <li>Run the MSI file and follow the instructions in the installer.</li>
 <li>Run Autodesk Maya and click on the cadnano button on the top right of the Maya interface.<br /><a href="./sites/default/files/images/installScreen1.png"><img width="200" src="./sites/default/files/images/installScreen1.png" /></a>
 </li>
 
-<h2>Troubleshooting</h2>
+<h3>Troubleshooting</h3>
 <p>A few users have encountered a problem where the Maya configuration files are not updated by the installer. The following additional steps may be used to complete the installation.</p>
 <h4>Try Rebooting</h4>
 <p>If the installer requests a reboot, please reboot before running Maya.</p>
@@ -144,7 +148,8 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":
 <h4>Import Error: No module named sip</h4>
 <p>If you are trying to use Maya 2013 and are getting this error, one workaround is to download and manually install <a href="http://nathanhorne.com/?p=460">Maya 2013 PyQt x64</a> from Nathan Horne's website. (p.s. — Nathan's blog is amazingly useful - many great examples for how to get python/pyqt code to run inside Maya).</p>
 <h4>Set the location of the cadnano plugin manually</h4>
-<ol><li>Configure CADNANO_PATH<br /><strong>Win7/Vista</strong>: Start Menu &gt; Control Panel &gt; System &amp; Security &gt; System &gt; Advanced System Settings<br /><strong>XP</strong>: Right click on My Computer &gt; Properties &gt; Advanced tab Environment Variables &gt; Under System variables click New...
+<ol><li>Configure CADNANO_PATH<br />
+<strong>Win7/Vista</strong>: Start Menu &gt; Control Panel &gt; System &amp; Security &gt; System &gt; Advanced System Settings<br /><strong>XP</strong>: Right click on My Computer &gt; Properties &gt; Advanced tab Environment Variables &gt; Under System variables click New...
 <p>Variable name: CADNANO_PATH<br />
 Variable value:&lt;cadnano installation path&gt; (default: C:\Program Files (x86)\CADnano2\)
 </p></li>
@@ -170,16 +175,13 @@ In order to restore the preferences to their defaults, simply delete (or rename)
 <li>On Windows it can be found in C:\Documents and Settings\[username]\My Documents\maya\[version].
 </li><li>On OSX it is in /Users/[username]/Library/Preferences/Autodesk/maya/[version].<br /></li></div></div></div>  </div>
 
-      <footer>
-                </footer>
+<footer></footer>
 
-
- <!-- /.node -->
+<!-- /.node -->
 </div>
 </section> </div>
- <!-- /.region -->
-  </section> <!-- /#main -->
-
+<!-- /.region -->
+</section> <!-- /#main -->
 
 <aside id="sidebar-second" role="complimentary" class="sidebar clearfix">
 <div class="region region-sidebar-second">
@@ -189,8 +191,6 @@ In order to restore the preferences to their defaults, simply delete (or rename)
 </section> </div>
  <!-- /.region -->
 </aside>  <!-- /#sidebar-second -->
-
-
 
 <footer id="footer" role="contentinfo" class="clearfix">
 <div class="dots"></div>
